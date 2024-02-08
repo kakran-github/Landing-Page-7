@@ -1,0 +1,132 @@
+@font-face {
+    font-family: cooper;
+    src: url(./CooperLtBTLight.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cooper;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main>h1{
+    font-size: 5.4vw;
+    width: 60%;
+    font-weight: 100;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 99;
+}
+#main>h1::after{
+    content:"";
+    position: absolute;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    width: 37%;
+    height: 16px;
+    bottom: -3px;
+    left: 50%;
+    background-size: cover;
+    transform: translate(-50%,0);
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav>h1{
+    font-weight: 500;
+    font-size: 32px;
+}
+#nav>h1::after{
+    content:"";
+    position: absolute;
+    background-color: rgb(0, 235, 143);
+    width: 4px;
+    height: 4px;
+    bottom:38px;
+    left: 212px;
+    border-radius: 10px;
+}
+#nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav2 a{
+    text-decoration: none;
+    color: #000;
+    margin: 20px;
+} 
+#nav2 a:nth-last-child(1){
+    padding: 7px 18px;
+    border-radius: 50px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+#greendiv{
+    height: 100%;
+    width: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top:0;
+    left:-100%;
+    transition: left 0.4s ease;
+}
+#nav2 a:nth-last-child(1):hover #greendiv{
+    left:0%;
+}
+#nav2 a:nth-last-child(1) h5{
+    font-weight: 100;
+
+    margin-right: 7px;
+}
+#arrow{
+    position: relative;
+    z-index: 99; 
+    display: flex;
+}
+#img1{
+    position: absolute;
+    height: 69%;
+    width: auto;
+    left: 8%;
+}
+#img2{
+    position: absolute;
+    height: 29%;
+    width: auto;
+    right: 23.5%;
+    top: 16%;
+}
+#img3{
+    position: absolute;
+    height: 37%;
+    width: auto;
+    bottom: 8%;
+    right: 9%;
+}
+#main img{
+    transition: margin 0.4s ease;
+}
+#main img:hover{
+    margin-top: -40px;
+}
